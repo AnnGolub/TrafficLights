@@ -16,20 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FvA-uJ-mGX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvA-uJ-mGX">
                                 <rect key="frame" x="132" y="103" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="J86-58-0J1"/>
+                                    <constraint firstAttribute="width" constant="150" id="Umg-7G-8H1"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yml-nQ-z7i">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yml-nQ-z7i">
                                 <rect key="frame" x="132" y="287" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="1aw-F0-vG3"/>
+                                    <constraint firstAttribute="width" constant="150" id="mmy-vs-q1a"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gz4-0h-shD">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gz4-0h-shD">
                                 <rect key="frame" x="132" y="480" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DPx-Fb-R0a"/>
+                                    <constraint firstAttribute="height" constant="150" id="RfA-ep-oVG"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85J-Tq-9UU">
                                 <rect key="frame" x="107" y="750" width="200" height="56"/>
@@ -50,8 +59,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FvA-uJ-mGX" firstAttribute="centerX" secondItem="85J-Tq-9UU" secondAttribute="centerX" id="0mb-er-l1a"/>
+                            <constraint firstItem="yml-nQ-z7i" firstAttribute="width" secondItem="FvA-uJ-mGX" secondAttribute="width" id="4S2-8A-wj2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="gz4-0h-shD" secondAttribute="bottom" constant="232" id="Art-jc-ONq"/>
+                            <constraint firstItem="yml-nQ-z7i" firstAttribute="top" secondItem="FvA-uJ-mGX" secondAttribute="bottom" constant="34" id="Bq0-j1-Egl"/>
                             <constraint firstItem="85J-Tq-9UU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gw3-NV-fuC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="85J-Tq-9UU" secondAttribute="bottom" constant="56" id="RC4-0c-UFF"/>
+                            <constraint firstItem="FvA-uJ-mGX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="I2V-p2-Rvi"/>
+                            <constraint firstItem="yml-nQ-z7i" firstAttribute="height" secondItem="FvA-uJ-mGX" secondAttribute="height" id="I9Y-Ok-gPj"/>
+                            <constraint firstItem="FvA-uJ-mGX" firstAttribute="leading" secondItem="yml-nQ-z7i" secondAttribute="leading" id="PaE-Fd-sN7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="85J-Tq-9UU" secondAttribute="bottom" constant="56" id="U6W-Mx-P7D"/>
+                            <constraint firstItem="gz4-0h-shD" firstAttribute="height" secondItem="FvA-uJ-mGX" secondAttribute="height" id="dwH-O1-8PM"/>
+                            <constraint firstItem="FvA-uJ-mGX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="et8-wn-HAe"/>
+                            <constraint firstItem="gz4-0h-shD" firstAttribute="width" secondItem="FvA-uJ-mGX" secondAttribute="width" id="hLH-DD-AVG"/>
+                            <constraint firstItem="yml-nQ-z7i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inm-OF-roO"/>
+                            <constraint firstItem="gz4-0h-shD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ksF-oZ-9Y4"/>
+                            <constraint firstItem="gz4-0h-shD" firstAttribute="top" secondItem="yml-nQ-z7i" secondAttribute="bottom" constant="43" id="ojw-Hk-0OI"/>
+                            <constraint firstItem="FvA-uJ-mGX" firstAttribute="leading" secondItem="gz4-0h-shD" secondAttribute="leading" id="uJQ-II-s7M"/>
                         </constraints>
                     </view>
                     <connections>
